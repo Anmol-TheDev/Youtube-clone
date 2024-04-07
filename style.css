@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+body{
+
+    background-color: black;
+
+}
+.right-nav{
+    display: flex;
+    gap:1.5rem;
+    margin-right:5rem;
+
+}
+.center-nav{
+    display: flex;
+}
+.navbar{
+    position:sticky;
+    top:0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 0.5rem;
+    height:10vh;
+    z-index:100;
+    background-color: black;
+   
+}
+
+.logo{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.logo p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:24px;
+   color:white;
+}
+
+.logo img{
+   padding-left:25px;
+   width:45px;
+   height:44px;
+}
+
+.search {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.search-icon{
+    font-size:22px;
+    width:50px;
+    height:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(87, 87, 87, 0.341);
+    border-top-right-radius:17px;
+    border-bottom-right-radius:17px;
+    
+
+}
+
+.search input{
+    border:none;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    background-color:#121212;
+    color: white;
+    font-size:20px;
+    width: 28vw;
+    height:45px;
+    padding-left:10px;
+}
+.search input:hover{
+    -webkit-transition: width 0.6s ease-in-out;
+    -moz-transition: width 0.6s ease-in-out;
+    -o-transition: width 0.6s ease-in-out;
+    transition: width 0.6s ease-in-out;
+    width:35vw;
+}
+ 
+.nav-mic{
+    width:43px;
+    height:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:23px;
+    background-color:rgba(87, 87, 87, 0.341);
+    border-radius:50%;
+    margin-left:1.5rem;
+}
+.nav-video{
+    width:43px;
+    height:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:23px;
+    background-color:rgba(87, 87, 87, 0.341);
+    border-radius:50%;
+}
+.nav-bell{
+    width:43px;
+    height:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:23px;
+    background-color:rgba(87, 87, 87, 0.341);
+    border-radius:50%;
+
+}
+.profile{
+    width:43px;
+    height:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:23px;
+    background-color:rgba(87, 87, 87, 0.341);
+    border-radius:50%;
+}
+ nav{
+    padding:12px;
+   width:240px;
+   display:flex;
+   flex-direction:column; 
+   flex-wrap: wrap;
+   justify-content:space-evenly;
+    font-size: 20px;
+    height:100%;
+    float: left;
+    background-color:rgba(0, 0, 0, 0.959);
+    font-weight:500;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+    scrollbar-width:thin;
+    scrollbar-color: #555 #222;
+   position: fixed;
+ }
+ i{
+    
+    color: white;
+ }
+
+ li{
+     padding: 17px;
+     color:white;
+    }
+
+    li a{
+     display:flex;
+     gap:1rem;
+   white-space: nowrap;
+    color:white;
+ }
+ ul{
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+ }
+ 
+ li:hover{
+    background-color: rgba(128, 128, 128, 0.505);
+    border-radius: 7px;  
+
+ }
+
+ p{
+    font-weight: 500;
+ }
+.skeleton{
+   margin-left:310px ;
+    display: flex;
+    gap:3rem;
+    flex-wrap:wrap;
+    margin-top:10px;
+}
+ .main{
+display: flex;
+flex-wrap: wrap;
+    width:23vw;
+    height:27vh;
+    border-radius: 10px;
+ }
+ .main-bottem{   
+    display: flex;
+    flex-wrap: wrap;
+    width:22vw;
+ }
+ .video{
+    display: flex;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    width:100%;
+    height:19vh;
+    background-color:#333;
+ }
+
+.p1{
+    width:80%;
+    height:10px;
+    background-color:#333;
+   
+}
+.p2{
+    margin-top:5px;
+    width:60%;
+    height:10px;
+    background-color: #333;
+}
+.skeleton {
+    animation: skeleton-loading 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes skeleton-loading {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
